@@ -2,8 +2,12 @@ import re
 import datetime
 
 ipv4_pattern = r'\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b'
-ipv4_list = []
-ipv4_dict = {}
+
+ipv4_data_dict = {
+    "ipv4_list" : [],
+    "sus_ip_list" : [],
+    "ipv_4_dict" : {}
+}
 sus_ip_addrs = []
 with open('sample_auth.log', 'r') as l:
     print('Welcome to my make shift log analyzer')
@@ -12,27 +16,22 @@ with open('sample_auth.log', 'r') as l:
     for line in l.readlines():
         for match in re.finditer(ipv4_pattern, line, re.S):
             match_text = match.group()
-            if match_text in ipv4_list:
-                if ipv4_dict.get(match_text) == None:
-                    ipv4_dict[match_text] = 1
+            if match_text in ipv4_data_dict["ipv4_list"]:
+                if ipv4_data_dict["ipv_4_dict"].get(match_text) == None:
+                    ipv4_data_dict["ipv_4_dict"][match_text] = 1
                 else:
-                    if ipv4_dict.get(match_text) >= 5 and match_text not in sus_ip_addrs:
-                        sus_ip_addrs.append(match_text)
-                    ipv4_dict[match_text] = ipv4_dict.get(match_text) + 1
+                    if ipv4_data_dict["ipv_4_dict"].get(match_text) == 5 and match_text not in sus_ip_addrs:
+                        ipv4_data_dict["sus_ip_list"].append(match_text)
+                    ipv4_data_dict["ipv_4_dict"][match_text] = ipv4_data_dict["ipv_4_dict"].get(match_text) + 1
             else:
-                ipv4_list.append(match_text)
+                ipv4_data_dict["ipv4_list"].append(match_text)
 
     print("Displaying list of suspicious ip addresses:")
     print()
-    for ip in sus_ip_addrs:
-        print(f"{ip} appeared {ipv4_dict.get(ip)} times")
+    for ip in ipv4_data_dict["sus_ip_list"]:
+        print(f"{ip} appeared {ipv4_data_dict["ipv_4_dict"].get(ip)} times")
     
     
                 
-                
-
-
-
-
 
 l.close()
