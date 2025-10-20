@@ -1,4 +1,5 @@
 import re
+import time
 
 def find_suspicious_ip_addrs(ipv4_data_dict: dict) -> dict:
     """Finds ip addresses that have connected 5 times and returns a dict containing a list of them while outputing information to screen"""
@@ -28,3 +29,29 @@ def find_suspicious_ip_addrs(ipv4_data_dict: dict) -> dict:
 
         l.close()
         return ipv4_data_dict   
+
+def wait_5_seconds_repeat_message(message: str):
+    if message == None:
+        message ="................................"
+    countdown_ticks = 5
+    print(message)
+    print(f"in {countdown_ticks}(s)")
+    countdown_ticks -= 1
+    time.sleep(1)
+    print(message)
+    print(f"in {countdown_ticks}(s)")
+    countdown_ticks -= 1
+    time.sleep(1)
+    print(message)
+    print(f"in {countdown_ticks}(s)")
+    countdown_ticks -= 1
+    time.sleep(1)
+    print(message)
+    print(f"in {countdown_ticks}(s)")
+    countdown_ticks -= 1
+    time.sleep(1)
+    print(message)
+    print(f"in {countdown_ticks}(s)")
+    countdown_ticks -= 1
+    time.sleep(1)
+    return
