@@ -1,6 +1,6 @@
 import re
 import time
-
+from data import ipv4_data_dict
 def find_suspicious_ip_addrs(ipv4_data_dict: dict) -> dict:
     """Finds ip addresses that have connected 5 times and returns a dict containing a list of them while outputing information to screen"""
     ipv4_pattern = r'\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b'
@@ -28,7 +28,33 @@ def find_suspicious_ip_addrs(ipv4_data_dict: dict) -> dict:
             print(f"{ip} appeared {ipv4_data_dict["ipv_4_dict"].get(ip)} times")
 
         l.close()
-        return ipv4_data_dict   
+        return ipv4_data_dict 
+    
+def print_unique_ipv4_addrs(ipv4_data_dict: dict):
+    for ip in ipv4_data_dict["ipv4_list"]:
+        print(ip)
+    
+     
+def main_menu(ipv4_data_dict: dict):
+    print("Please select an option")
+    print("enter 1 to look for suspicious ip address based multiple connections")
+    print("enter 2 to repeat a message on a timer")
+    print("enter 3 to print all ip addresses after selecting option 1")
+    try:
+        option = int(input("Enter Option:"))
+    except:
+        print("Invalid option")
+        pass
+    match option:
+        case 1:
+            find_suspicious_ip_addrs(ipv4_data_dict)
+        case 2:
+            wait_5_seconds_repeat_message(ipv4_data_dict)
+        case 3:
+            print_unique_ipv4_addrs(ipv4_data_dict)
+        case _:
+            print("invalid option")
+
 
 def wait_5_seconds_repeat_message(message: str):
     if message == None:

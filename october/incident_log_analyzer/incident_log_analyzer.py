@@ -1,21 +1,13 @@
 import datetime
-
-
-from log_functions import find_suspicious_ip_addrs
-from log_functions import wait_5_seconds_repeat_message
-
+from log_functions import main_menu
+from data import ipv4_data_dict
 
 def main():
 
-    ipv4_data_dict = {
-    "ipv4_list" : [],
-    "sus_ip_list" : [],
-    "ipv_4_dict" : {}
-    }
+   
 
-    find_suspicious_ip_addrs(ipv4_data_dict)
-    wait_5_seconds_repeat_message("I will now display admin log attempts")
-
+    while True:
+        main_menu(ipv4_data_dict)
 
 if __name__ == "__main__":
     main()
